@@ -17,7 +17,5 @@ for t in temperature:
     children = t.findChildren("h2")
     titles.append(t.text.replace("\n", ""))
 
-count = 0
 for value in titles:
-    count = count + 1
-    print("{} - {}".format(count, value))
+    print("- {}".format(value))
